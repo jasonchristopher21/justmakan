@@ -10,6 +10,7 @@ import Rewards from "./pages/Rewards";
 import '@fontsource/inter/700.css'
 import '@fontsource/inter/400.css'
 import Scan from "./pages/Scan";
+import View from "./pages/View"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const theme = extendTheme({
@@ -39,6 +40,8 @@ root.render(
             <Route path="explore" element={<Explore />} />
             <Route path="rewards" element={<Rewards />} />
             <Route path="scan" element={<Scan />} />
+            <Route path="local" element={<View isTourist={false} />} />
+            <Route path="tourist" element={<View isTourist={true} />} />
           </Route>
         </Routes>
       </ChakraProvider>

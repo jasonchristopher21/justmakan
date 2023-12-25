@@ -8,7 +8,7 @@ import CardGiftcardRoundedIcon from "@mui/icons-material/CardGiftcardRounded";
 import { useNavigate } from "react-router-dom";
 
 // Not good practice here but it's alright for a demo
-const Navbar = ({handleCameraClick, cameraOpen}) => {
+const Navbar = ({handleCameraClick, cameraOpen, isTourist}) => {
   const bg = useColorModeValue("white", "gray.700");
   const border = useColorModeValue("gray.200", "gray.600");
   const darkBg = useColorModeValue("gray.700", "gray.900");
